@@ -45,6 +45,13 @@ I created MoonGlade because I needed an easy way to edit my static sites without
 
 ---
 
+### To do
+
+- [x] add ability to edit static sites
+- [ ] add ability to clone sites from admin panel
+
+---
+
 ### Special Thanks
 
 Special thanks to [https://github.com/oxalorg/sakura](https://github.com/oxalorg/sakura) which I used to stylize the index page you can see after fresh installation of MoonGlade.
