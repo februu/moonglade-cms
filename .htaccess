@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+ErrorDocument 400 /mg/error.php
+ErrorDocument 401 /mg/error.php
+ErrorDocument 403 /mg/error.php
+ErrorDocument 404 /mg/error.php
+ErrorDocument 500 /mg/error.php
