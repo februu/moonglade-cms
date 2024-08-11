@@ -2,11 +2,6 @@
 
 MoonGlade CMS is an exceptionally simple flat-file content management system (CMS) built with PHP. As my first PHP project, it's a work in progress and may not be perfect, but it effectively serves its purpose. MoonGlade CMS allows for easy modification of basic .html websites through an admin panel, all while minimizing the amount of code required for setup.
 
-### Important Links:
-
-- Project repository: [https://github.com/februu/moonglade-cms](https://github.com/februu/moonglade-cms)
-- Admin page: [/mg-admin](/mg-admin)
-
 ---
 
 ### Motivation
