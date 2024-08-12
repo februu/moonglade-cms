@@ -74,4 +74,6 @@ I created MoonGlade because I needed an easy way to edit my static sites without
 
 ### Special Thanks
 
-Special thanks to [https://github.com/oxalorg/sakura](https://github.com/oxalorg/sakura) which I used to stylize the index page you can see after fresh installation of MoonGlade.
+Special thanks to [Sakura](https://github.com/oxalorg/sakura) which I used to stylize the index page you can see after fresh installation of MoonGlade.
+
+Special thanks to [Quill](https://github.com/slab/quill) which provides the WYSIWYG HTML editor.
