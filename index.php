@@ -34,7 +34,7 @@
         <li>Log in to the admin panel <a target="_blank" href="/mg-admin/">here</a>.</li>
         <li>Navigate to the <strong>Settings</strong> tab and scroll to the last section on the page.</li>
         <li>Give a name to your new editable section and click <strong>Add Editable Section File</strong>.
-            <br><i>Section IDs may only contain numbers, letters, and underscores.</i>
+            <br><i>Section IDs may only contain numbers, letters, and underscores and must not start with a number.</i>
         </li>
         <li>Place your static websites in the main directory of the site and change their extensions to <code>.php</code>.</li>
         <li>Open the file where you want to include the editable section and add the following code:

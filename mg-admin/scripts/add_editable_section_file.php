@@ -6,7 +6,7 @@ check_if_post();
 
 $section_id = sanitize_input($_POST['sectionid']);
 if (!validate_section_id($section_id)) {
-    header('Location: /mg-admin/settings.php?error=' . urlencode('Section id can only contain letters, numbers, and underscores.'));
+    header('Location: /mg-admin/settings.php?error=' . urlencode('Section id can only contain letters, numbers, and underscores and must not start with a number.'));
     die();
 }
 $path = __DIR__ . '\\..\\..\\mg-data\\content\\';;

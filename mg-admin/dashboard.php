@@ -17,16 +17,25 @@ secure();
         <header>
             <h3>Dashboard</h3>
         </header>
-        <p>Welcome back, <?php echo $_SESSION['login_user']; ?>! <br>You are running MoonGlade version 1.0. <br>Latest available version:
+        <p>Welcome back, <?php echo $_SESSION['login_user']; ?>! <br>You are running MoonGlade version 1.0.2. <br>Latest available version:
             <?php
-            $url = 'https://gist.githubusercontent.com/februu/5954a8604ff51c4ab39208089b4a9351/raw/e34845ba15b5d16bbe7a5e449e34349949e6ee67/version.txt';
-            $content = file_get_contents($url);
-
-            // Check if the content was successfully retrieved
+            $url = 'https://api.github.com/repos/februu/moonglade-cms/releases/latest';
+            $options = [
+                "http" => [
+                    "header" => "User-Agent: PHP"
+                ]
+            ];
+            $context = stream_context_create($options);
+            $content = file_get_contents($url, false, $context);
             if ($content !== false) {
-                echo nl2br(htmlspecialchars($content));
+                $json_data = json_decode($content, true);
+                if (isset($json_data['name'])) {
+                    echo htmlspecialchars($json_data['name']);
+                } else {
+                    echo "unknown";
+                }
             } else {
-                echo "Failed to retrieve version information.";
+                echo "unknown";
             }
             ?>. <br> More info here: <a href="https://github.com/februu/moonglade-cms">https://github.com/februu/moonglade-cms</a>
         </p>

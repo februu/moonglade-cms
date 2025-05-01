@@ -69,6 +69,8 @@ I created MoonGlade because I needed an easy way to edit my static sites without
 
 - [x] add ability to edit static sites
 - [ ] add ability to clone sites from admin panel
+- [ ] add option to manage the sections from UI
+- [ ] add support for Nginx (write a tutorial, provide a simple config)
 
 ---
 

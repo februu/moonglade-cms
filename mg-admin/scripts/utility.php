@@ -23,7 +23,7 @@ function validate_username($username)
 
 function validate_section_id($section_id)
 {
-    return preg_match("/^[a-zA-Z0-9_]{2,32}$/", $section_id);
+    return preg_match("/^[a-zA-Z_][a-zA-Z0-9_]{1,31}$/", $section_id);
 }
 
 function validate_password($password)
