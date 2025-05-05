@@ -1,5 +1,5 @@
 <?php
-include('scripts/utility.php');
+include( $_SERVER['DOCUMENT_ROOT'] . "/mg/utility.php");
 secure();
 ?>
 <html lang="en">
@@ -14,10 +14,16 @@ secure();
 <body>
     <?php include('components/navbar.php'); ?>
     <main>
-        <div class="modal-dashboard" id="modal"></div>
         <header>
             <h3>Settings</h3>
         </header>
+
+        <!-- Add Section Form -->
+
+        <form class="login-form" action="scripts/add_editable_section_file.php" method="post">
+            <input class="login-input" type="text" id="sectionid" name="sectionid" placeholder="New section id" required />
+            <div class="right"><button class="save-button" type="submit">Add editable section file</button></div>
+        </form>
 
         <!-- Username Update Form -->
 
@@ -37,12 +43,8 @@ secure();
             <div class="right"><button class="save-button" type="submit">Change Password</button></div>
         </form>
 
-        <form class="login-form" action="scripts/add_editable_section_file.php" method="post">
-            <input class="login-input" type="text" id="sectionid" name="sectionid" placeholder="New section id" required />
-            <div class="right"><button class="save-button" type="submit">Add editable section file</button></div>
-        </form>
-
     </main>
+    <div class="modal-dashboard" id="modal"></div>
     <?php include('components/footer.php'); ?>
     <script src="/mg-admin/main.js"></script>
 </body>

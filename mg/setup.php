@@ -1,17 +1,6 @@
-<?php include("..\\mg-admin\\scripts\\utility.php"); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . "/mg/utility.php"); ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in - MoonGlade CMS</title>
-    <link rel="stylesheet" href="/mg/style.css" />
-</head>
-
-<body class="center">
-    <?php
+<?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $username = sanitize_input($_POST['username']);
         $password = sanitize_input($_POST['password']);
@@ -47,7 +36,19 @@
             }
         }
     }
-    ?>
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in - MoonGlade CMS</title>
+    <link rel="stylesheet" href="/mg/style.css" />
+</head>
+
+<body class="center">
     <form class="login-form" action="setup.php" method="post">
         <header>
             <h3>MG Setup</h3>

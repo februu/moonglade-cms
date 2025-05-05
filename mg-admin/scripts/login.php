@@ -1,5 +1,6 @@
 <?php
-include('utility.php');
+include( $_SERVER['DOCUMENT_ROOT'] . "/mg/utility.php");
+
 session_start();
 
 if (isset($_SESSION['login_user'])) {
@@ -8,7 +9,6 @@ if (isset($_SESSION['login_user'])) {
 }
 
 check_if_post();
-
 
 $username = sanitize_input($_POST['username']);
 $password = sanitize_input($_POST['password']);

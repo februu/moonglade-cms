@@ -1,5 +1,6 @@
 <?php
-include('utility.php');
+include( $_SERVER['DOCUMENT_ROOT'] . "/mg/utility.php");
+
 session_start();
 secure();
 check_if_post();

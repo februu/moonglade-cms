@@ -26,7 +26,7 @@ if (isset($_SESSION['login-user'])) {
 	<div class="modal-login" id="modal"></div>
 	<footer>MoonGlade CMS by <a href="https://febru.me/">febru</a></footer>
 
-	<script src="/mg-admin/main.js"></script>
+	<script src="/mg-admin/modal.js"></script>
 </body>
 
 </html>

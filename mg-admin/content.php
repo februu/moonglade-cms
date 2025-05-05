@@ -1,7 +1,6 @@
 <?php
-include('scripts/utility.php');
+include( $_SERVER['DOCUMENT_ROOT'] . "/mg/utility.php");
 secure();
-
 
 function get_content($path)
 {
@@ -28,7 +27,6 @@ function get_content($path)
 <body>
     <?php include('components/navbar.php'); ?>
     <main>
-        <div class="modal-dashboard" id="modal"></div>
         <header>
             <h3>Content</h3>
         </header>
@@ -49,7 +47,7 @@ function get_content($path)
         ?>
 
     </main>
-    <div class="modal" id="modal"></div>
+    <div class="modal-dashboard" id="modal"></div>
     <?php include('components/footer.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
