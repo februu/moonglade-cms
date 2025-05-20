@@ -11,14 +11,13 @@ $error_code = isset($_SERVER['REDIRECT_STATUS']) ? $_SERVER['REDIRECT_STATUS'] :
 	<title>Error <?php echo $error_code; ?></title>
 </head>
 
-<body class="center">
+<body>
 	<header>
 		<h3>Error</h3>
 		<h1><?php echo $error_code; ?></h1>
 	</header>
 	<p>Oops! Something went wrong.</p>
 	<a href="javascript:history.back()">Go Back</a>
-	<footer>MoonGlade CMS by <a href="https://febru.me/">febru</a></footer>
 </body>
 
 </html>

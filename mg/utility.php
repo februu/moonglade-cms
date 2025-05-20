@@ -11,7 +11,7 @@ function secure()
 function check_if_post()
 {
     if ($_SERVER["REQUEST_METHOD"] != "POST") {
-        header("location: /mg/error.php");
+        header("HTTP/1.1 404 Method Not Allowed");
         die();
     }
 }
