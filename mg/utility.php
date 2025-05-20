@@ -11,7 +11,7 @@ function secure()
 function check_if_post()
 {
     if ($_SERVER["REQUEST_METHOD"] != "POST") {
-        header("location: /mg-admin/index.php");
+        header("location: /mg/error.php");
         die();
     }
 }
@@ -32,13 +32,27 @@ function validate_password($password)
         return false;
     }
 
+    if (strlen($password) > 64) {
+        return false;
+    }
+
+    if (trim($password) !== $password) {
+        return false;
+    }
+
     if (!preg_match("/[A-Z]/", $password)) {
         return false;
     }
+
     if (!preg_match("/[a-z]/", $password)) {
         return false;
     }
+
     if (!preg_match("/[0-9]/", $password)) {
+        return false;
+    }
+
+    if (!preg_match('/[!@#$%^&*()_+\-=\[\]{};\':"\\\\|,.<>\/?~`]/', $password)) {
         return false;
     }
 
