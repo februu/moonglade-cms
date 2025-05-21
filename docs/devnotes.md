@@ -31,7 +31,7 @@ Useful with Live Server for VS Code.
 For styling I'm using my favourite solution: Tailwind CSS. To use it, you need to download the CLI version (you can find the link below in the **Creating a release** section). Then you can run the command provided below:
 
 ```sh
-tailwindcss -i ./mg/tailwind.css -o ./mg/style.css --watch
+tailwindcss -i tailwind.css -o ./mg/style.css --watch
 ```
 
 ### Creating a release

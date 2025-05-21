@@ -7,6 +7,6 @@
     </div>
     <div class="flex justify-between items-center p-3 bg-zinc-800 rounded mb-2">
         <span>Latest Available</span>
-        <span class="font-mono bg-zinc-700 px-2 py-1 rounded text-amber-400">v1.1.0</span>
+        <span class="font-mono bg-zinc-700 px-2 py-1 rounded text-emerald-400">v1.1.0</span>
     </div>
 </div>
