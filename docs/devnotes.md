@@ -22,6 +22,10 @@ Listen 8081     # Add this line
 </VirtualHost>
 ```
 
+### Live Server Web Extension
+
+Useful with Live Server for VS Code.
+
 ### Tailwind
 
 For styling I'm using my favourite solution: Tailwind CSS. To use it, you need to download the CLI version (you can find the link below in the **Creating a release** section). Then you can run the command provided below:
