@@ -1,4 +1,5 @@
-<div class="w-full max-w-sm p-6 bg-zinc-900 rounded-lg shadow-md">
+<!-- MoonGlade Version Check Widget -->
+<div class="w-full p-6 bg-zinc-900 rounded-lg shadow-md">
     <h2 class="text-2xl font-semibold mb-4">System Information</h2>
     <div class="flex justify-between items-center p-3 bg-zinc-800 rounded mb-2">
         <span>Current Version</span>
