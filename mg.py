@@ -45,11 +45,11 @@ def build_release():
     print(f"\033[92mZipping completed successfully. (\033[0m ./release/moonglade-{version}.zip \033[92m)\033[0m")
 
 if __name__ == "__main__":
-    print("\033[96mWelcome to MoonGlade CMS Dev Script 🌙\033[0m")
+    print("\n\033[96mWelcome to MoonGlade CMS Dev Script 🌙\033[0m")
 
     if len(os.sys.argv) > 1:
         if os.sys.argv[1] == "--dev":
-            print("\033[96mRunning Tailwind CSS in dev mode...\033[0m")
+            print("\033[96mRunning Tailwind CSS in dev mode...\033[0m (use Ctrl+C to exit)")
             try:
                 result = subprocess.run([tailwind_path, "-i", "tailwind.css", "-o", "./mg/style.css", "--watch"], capture_output=True, text=True)
                 if not result.returncode == 0:
