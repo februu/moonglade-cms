@@ -7,7 +7,7 @@ import subprocess
 
 ### Settings ###
 
-items = [".htaccess", "index.php", "mg-admin", "mg"]
+items = [".htaccess", "index.php", "mg-admin", "mg-core"]
 tailwind_path = "tailwindcss"
 version = "2.0.0"
 

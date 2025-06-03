@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌙 Content - MoonGlade</title>
-    <link rel="stylesheet" href="/mg/style.css">
+    <link rel="stylesheet" href="/mg-core/style.css">
 </head>
 
 <body class="h-screen bg-zinc-950 text-zinc-100 flex flex-col items-center">
