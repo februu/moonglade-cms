@@ -1,9 +1,17 @@
+# Add .php extension if file exists
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php [L]
 
-ErrorDocument 400 /mg/error.php
-ErrorDocument 401 /mg/error.php
-ErrorDocument 403 /mg/error.php
-ErrorDocument 404 /mg/error.php
-ErrorDocument 500 /mg/error.php
+# Prevent directory listing
+
+Options -Indexes
+
+# Error handling - redirect errors to /mg-core/error.php
+
+ErrorDocument 400 /mg-core/error.php
+ErrorDocument 401 /mg-core/error.php
+ErrorDocument 403 /mg-core/error.php
+ErrorDocument 404 /mg-core/error.php
+ErrorDocument 500 /mg-core/error.php
