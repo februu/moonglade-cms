@@ -5,6 +5,8 @@ import Dashboard from './components/Dashboard.tsx';
 import Content from './components/Content.tsx';
 import Documentation from './components/Documentation.tsx';
 import Settings from './components/Settings.tsx';
+import Site from './components/Site.tsx';
+import Media from './components/Media.tsx';
 
 function App() {
   const [activeSection, setActiveSection] = useState('dashboard');
@@ -21,9 +23,12 @@ function App() {
       />
 
       { activeSection === 'dashboard' && <Dashboard /> }
+      { activeSection === 'site' && <Site /> }
       { activeSection === 'content' && <Content /> }
+      { activeSection === 'media' && <Media /> }
       { activeSection === 'documentation' && <Documentation /> }
       { activeSection === 'settings' && <Settings /> }
+      
     </div>
   )
 }
